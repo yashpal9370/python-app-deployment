@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Checkout (controller)') {
             steps {
-                git branch: 'main', url: 'https://github.com/harshalfct/python-app.git'
+                git branch: 'main', url: 'https://github.com/yashpal9370/python-app-deployment.git'
             }
         }
 
