@@ -3,139 +3,93 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f7f4">
-  <meta name="description" content="HarshalTechOps gives ambitious teams a calmer, clearer way to build and scale in the cloud.">
-  <title>HarshalTechOps — Build at your speed</title>
+  <meta name="theme-color" content="#f3efe6">
+  <meta name="description" content="Yashpal, Cloud &amp; DevOps Engineer. CI/CD pipelines, Linux servers and cloud automation.">
+  <title>Yashpal | Cloud &amp; DevOps Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header" id="top">
-    <nav class="nav shell" aria-label="Main navigation">
-      <a class="brand" href="#top" aria-label="HarshalTechOps home">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none"><path d="M9.4 22.8h13.1a5.1 5.1 0 0 0 .4-10.2A7.2 7.2 0 0 0 9.1 11a5.9 5.9 0 0 0 .3 11.8Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="m13 18 2.3 2.3L20 15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-        <span>HarshalTechOps</span>
-      </a>
-      <div class="nav-links">
-        <a href="#platform">Platform</a>
-        <a href="#capabilities">Capabilities</a>
-        <a href="#principles">Why HarshalTechOps</a>
+  <header class="bar">
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="logo" href="#top">Yashpal<span>.ops</span></a>
+      <div class="links">
+        <a href="#stack">Stack</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
       </div>
-      <a class="button button-small button-dark" href="#get-started">Get started <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero shell" id="platform">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> THE CLOUD, IN GOOD HANDS</p>
-        <h1>Infrastructure that moves <span>at your speed.</span></h1>
-        <p class="hero-lede">Spend less time untangling your cloud. Give your team the clarity and confidence to build what comes next.</p>
-        <div class="hero-actions">
-          <a class="button button-lime" href="#get-started">Meet your new cloud <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="#capabilities">See what’s possible <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="hero-proof">
-          <span class="avatar-stack" aria-hidden="true"><i>H</i><i>T</i><i>+</i></span>
-          <p>Built for teams with <strong>big things in mind</strong></p>
+  <main id="top">
+    <section class="wrap hero">
+      <div>
+        <p class="kicker">Cloud &amp; DevOps Engineer</p>
+        <h1>I build the pipes<br>that ship <mark>software.</mark></h1>
+        <p class="lead">Hi, I'm Yashpal. I automate deployments, harden Linux servers and keep cloud environments tidy, so releases are a non-event.</p>
+        <div class="cta">
+          <a class="btn solid" href="#work">See my work</a>
+          <a class="btn line" href="#contact">Get in touch</a>
         </div>
       </div>
 
-      <div class="visual-wrap" aria-label="Illustration of a cloud workspace dashboard">
-        <div class="visual-glow"></div>
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="cloud-core" aria-hidden="true">
-          <svg viewBox="0 0 100 100" fill="none"><path d="M28 69h45a17 17 0 0 0 1-34A24 24 0 0 0 28 31a19 19 0 0 0 0 38Z" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="m39 52 8 8 16-18" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="float-card status-card">
-          <span class="status-icon" aria-hidden="true">✓</span>
-          <span><strong>All systems ready</strong><small>Your workspace is in sync</small></span>
-          <span class="live-dot" aria-label="Live"></span>
-        </div>
-        <div class="float-card deploy-card">
-          <span class="deploy-label">LATEST DEPLOYMENT</span>
-          <strong>Project Atlas</strong>
-          <span class="deploy-state"><span></span> Deployed successfully</span>
-          <div class="deploy-line"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <div class="deploy-foot"><span>BUILD ACTIVITY</span><span>Just now</span></div>
-        </div>
-        <div class="float-card secure-card"><span class="shield" aria-hidden="true">✳</span><span><strong>Secure by design</strong><small>Protection at every layer</small></span></div>
-        <span class="sparkle sparkle-one" aria-hidden="true">✳</span>
-        <span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+      <div class="ticket" role="img" aria-label="Example pipeline run, all stages passed">
+        <div class="ticket-head"><span>PIPELINE #128</span><b>PASSED</b></div>
+        <ul>
+          <li><i>01</i> Checkout <em>git</em></li>
+          <li><i>02</i> Copy to server <em>scp</em></li>
+          <li><i>03</i> Install &amp; test <em>pip</em></li>
+          <li><i>04</i> Deploy <em>live</em></li>
+        </ul>
+        <div class="ticket-foot">main &rarr; production</div>
       </div>
     </section>
 
-    <section class="trust-strip shell" aria-label="Platform highlights">
-      <p>MORE CLARITY. LESS CLOUD CHAOS.</p>
-      <div class="trust-points"><span><b>01</b> One clear platform</span><span><b>02</b> Security built in</span><span><b>03</b> Room to grow</span></div>
-    </section>
-
-    <section class="capabilities section-pad" id="capabilities">
-      <div class="shell">
-        <div class="section-heading">
-          <p class="eyebrow">A BETTER WAY TO BUILD</p>
-          <h2>Big-picture thinking.<br><span>Day-to-day simplicity.</span></h2>
-          <p>Everything your team needs to move from idea to impact, without the busywork in between.</p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card feature-green">
-            <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M6 25V13l10-6 10 6v12H6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 25v-8h8v8M11 13h.01M16 13h.01M21 13h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-            <span class="card-index">01 / BUILD</span>
-            <h3>Make room for momentum.</h3>
-            <p>Bring your workloads together in a flexible foundation that keeps up as your ideas grow.</p>
-            <a class="card-link" href="#get-started" aria-label="Learn more about building with HarshalTechOps">Explore the platform <span aria-hidden="true">↗</span></a>
-            <div class="card-art art-build" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
-          </article>
-          <article class="feature-card feature-lilac">
-            <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 4 26 8v7c0 6-4.2 10.5-10 13-5.8-2.5-10-7-10-13V8l10-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m11.5 15.5 3 3 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <span class="card-index">02 / PROTECT</span>
-            <h3>Confidence comes standard.</h3>
-            <p>Make security part of the way you work, with thoughtful safeguards from the start.</p>
-            <a class="card-link" href="#principles" aria-label="Learn about HarshalTechOps security principles">Our approach to trust <span aria-hidden="true">↗</span></a>
-            <div class="card-art art-protect" aria-hidden="true"><span>✓</span><i></i><b></b></div>
-          </article>
-          <article class="feature-card feature-peach">
-            <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M5 25V7m0 18h23M10 20l5-6 4 3 7-9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 8h5v5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <span class="card-index">03 / GROW</span>
-            <h3>Scale without the scramble.</h3>
-            <p>Stay focused on the work that matters while your cloud adapts to what’s next.</p>
-            <a class="card-link" href="#get-started" aria-label="Learn how HarshalTechOps can help you grow">Find your next step <span aria-hidden="true">↗</span></a>
-            <div class="card-art art-grow" aria-hidden="true"><i></i><i></i><i></i><i></i><span>↗</span></div>
-          </article>
-        </div>
+    <section class="wrap" id="stack">
+      <h2>My toolbox</h2>
+      <div class="tools">
+        <span>AWS</span><span>Linux</span><span>Jenkins</span><span>Git &amp; GitHub</span>
+        <span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Ansible</span>
+        <span>Python</span><span>Bash</span><span>Nginx</span><span>Monitoring</span>
       </div>
     </section>
 
-    <section class="principles shell" id="principles">
-      <div class="principles-art" aria-hidden="true">
-        <div class="principle-orbit"></div><div class="principle-center"><span>H</span></div>
-        <span class="principle-chip chip-one">People first</span><span class="principle-chip chip-two">Built to last</span><span class="principle-chip chip-three">Always clear</span>
-      </div>
-      <div class="principles-copy">
-        <p class="eyebrow">A LITTLE MORE HUMAN</p>
-        <h2>Technology should feel like a <span>tailwind.</span></h2>
-        <p>We believe great infrastructure should make ambitious work feel simpler—not add another layer to think about.</p>
-        <ul><li><span>✓</span> Clear choices, without the jargon</li><li><span>✓</span> Thoughtful security from the ground up</li><li><span>✓</span> A foundation that grows with you</li></ul>
+    <section class="wrap" id="work">
+      <h2>Selected work</h2>
+      <div class="work">
+        <article>
+          <b class="num">01</b>
+          <h3>Jenkins CI/CD to a target server</h3>
+          <p>Jenkins clones the repo, copies the app to a remote server over SSH, runs the tests and restarts the service automatically.</p>
+          <small>Jenkins &middot; SSH &middot; Python</small>
+        </article>
+        <article>
+          <b class="num">02</b>
+          <h3>Linux server setup</h3>
+          <p>Repeatable server preparation: users, packages, firewall rules and services configured the same way every time.</p>
+          <small>Linux &middot; Bash &middot; Nginx</small>
+        </article>
+        <article>
+          <b class="num">03</b>
+          <h3>Cloud infrastructure as code</h3>
+          <p>Networks, instances and security groups described in code, so environments can be rebuilt in minutes.</p>
+          <small>AWS &middot; Terraform</small>
+        </article>
       </div>
     </section>
 
-    <section class="closing shell" id="get-started">
-      <div class="closing-copy"><p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p><h2>Build something<br><span>worth scaling.</span></h2><p>Take a clearer look at what your cloud can do for you.</p></div>
-      <a class="button button-dark" href="#platform">Explore HarshalTechOps <span aria-hidden="true">↗</span></a>
-      <span class="closing-spark" aria-hidden="true">✳</span>
+    <section class="wrap contact" id="contact">
+      <h2>Let's automate something.</h2>
+      <p>Have a deployment that still needs manual steps? Let's talk.</p>
+      <a class="btn solid" href="mailto:yashpal9370@gmail.com">yashpal9370@gmail.com</a>
     </section>
   </main>
 
-  <footer class="footer shell">
-    <a class="brand" href="#top" aria-label="HarshalTechOps home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M9.4 22.8h13.1a5.1 5.1 0 0 0 .4-10.2A7.2 7.2 0 0 0 9.1 11a5.9 5.9 0 0 0 .3 11.8Z" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="m13 18 2.3 2.3L20 15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>HarshalTechOps</span></a>
-    <p>More room for what’s next.</p>
-    <span>© 2026 HarshalTechOps</span>
+  <footer class="wrap foot">
+    <span>&copy; 2026 Yashpal</span>
+    <span>Deployed with Jenkins</span>
   </footer>
 </body>
 </html>
